@@ -28,6 +28,16 @@ APlataforma::APlataforma()
 	Velocidad = 100.0f;
 	Signo = 1.0f;
 
+	//movimientoEjes = FVector(FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f));
+	movimientoEjes = FVector(1.0f, 0.0f, 0.0f);
+	movimientoLimitesMaximos = FVector(FMath::RandRange(200.0f, 800.0f), FMath::RandRange(200.0f, 800.0f), FMath::RandRange(200.0f, 800.0f));
+	movimientoLimitesMinimos = FVector(FMath::RandRange(-800.0f, -200.0f), FMath::RandRange(-800.0f, -200.0f), FMath::RandRange(-800.0f, -200.0f));
+	movimientoVelocidades = FVector(FMath::RandRange(50.0f, 200.0f), FMath::RandRange(50.0f, 200.0f), FMath::RandRange(50.0f, 200.0f));
+	//movimientoDireccion = FVector(FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f));
+	movimientoDireccion = FVector(1.0f, 0.0f, 0.0f);
+
+
+
 }
 
 // Called when the game starts or when spawned
@@ -42,17 +52,23 @@ void APlataforma::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	ZActual = GetActorLocation().Z;
+	posicionActual = GetActorLocation();
 
-	if (ZActual >= ZMax) {
-		Signo = -1.0f;
-	}
-	else if (ZActual <= ZMin) {
-		Signo = 1.0f;
+
+	if (posicionActual.X >= movimientoLimitesMaximos.X || posicionActual.X <= movimientoLimitesMinimos.X) {
+		movimientoDireccion.X *= -1.0f;
 	}
 
-	FVector NuevaUbicacion = GetActorLocation();
-	NuevaUbicacion.Z += Velocidad * Signo * DeltaTime;
-	SetActorLocation(NuevaUbicacion);
+	if (posicionActual.Y >= movimientoLimitesMaximos.Y || posicionActual.Y <= movimientoLimitesMinimos.Y) {
+		movimientoDireccion.Y *= -1.0f;
+	}
+
+	if (posicionActual.Z >= movimientoLimitesMaximos.Z || posicionActual.Z <= movimientoLimitesMinimos.Z) {
+		movimientoDireccion.Z *= -1.0f;
+	}
+
+	FVector posicionNueva = posicionActual + (movimientoDireccion * movimientoVelocidades * DeltaTime);
+	SetActorLocation(posicionNueva);
+
 }
 
