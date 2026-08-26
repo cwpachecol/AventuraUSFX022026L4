@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\AventuraUSFX022026L4.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{91CDF1F8-195B-4510-9ED2-CFB7310E3618}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AventuraUSFX022026L4.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AventuraUSFX022026L4Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0DD891C6-49AD-46A5-93A8-0BAECB14EAD8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\AventuraUSFX022026L4">
+      <UniqueIdentifier>{9E36AD8A-F7B8-4717-B873-36B81008D4EF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4.Build.cs">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4GameMode.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4GameMode.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4Pawn.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4Pawn.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4Projectile.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4Projectile.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\Plataforma.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\Plataforma.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
