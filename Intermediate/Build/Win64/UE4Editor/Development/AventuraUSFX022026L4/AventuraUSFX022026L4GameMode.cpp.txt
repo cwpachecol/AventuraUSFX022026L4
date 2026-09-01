@@ -15,3 +15,11 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\AventuraUSFX022026L4Pawn.generated.h
 D:\src_SIS457\AventuraUSFX022026L4\Source\AventuraUSFX022026L4\Plataforma.h
 D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\Plataforma.generated.h
+D:\src_SIS457\AventuraUSFX022026L4\Source\AventuraUSFX022026L4\PlataformaAerea.h
+D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\PlataformaAerea.generated.h
+D:\src_SIS457\AventuraUSFX022026L4\Source\AventuraUSFX022026L4\PlataformaTerrestre.h
+D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\PlataformaTerrestre.generated.h
+D:\src_SIS457\AventuraUSFX022026L4\Source\AventuraUSFX022026L4\PlataformaAcuatica.h
+D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\PlataformaAcuatica.generated.h
+D:\src_SIS457\AventuraUSFX022026L4\Source\AventuraUSFX022026L4\PlataformaSubterranea.h
+D:\src_SIS457\AventuraUSFX022026L4\Intermediate\Build\Win64\UE4Editor\Inc\AventuraUSFX022026L4\PlataformaSubterranea.generated.h
