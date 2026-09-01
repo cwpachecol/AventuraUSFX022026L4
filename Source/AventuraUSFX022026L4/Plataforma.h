@@ -28,17 +28,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	float ZMin;
-	float ZMax;
-	float ZActual;
-	float Velocidad;
-	float Signo;
-
 	FVector movimientoEjes = FVector(0.0f, 0.0f, 0.0f);
 	FVector movimientoLimitesMaximos = FVector(0.0f, 0.0f, 0.0f);
 	FVector movimientoLimitesMinimos = FVector(0.0f, 0.0f, 0.0f);
 	FVector movimientoVelocidades = FVector(0.0f, 0.0f, 0.0f);
 	FVector movimientoDireccion = FVector(0.0f, 0.0f, 0.0f);
 	FVector posicionActual = FVector(0.0f, 0.0f, 0.0f);
-
 };

@@ -20,7 +20,7 @@ void AAventuraUSFX022026L4GameMode::BeginPlay()
 
 	UWorld* World = GetWorld();
 
-	for (int i = 0; i < 200; i++) {
+	for (int i = 0; i < 10; i++) {
 		SpawnLocation = FVector(FMath::RandRange(-1500.0f, 1500.0f), FMath::RandRange(-1500.0f, 1500.0f), FMath::RandRange(50.0f, 1000.0f));
 		if (World != nullptr)
 		{

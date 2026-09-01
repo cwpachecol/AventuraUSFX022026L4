@@ -23,28 +23,18 @@ APlataforma::APlataforma()
 	//mallaPlataforma->OnComponentHit.AddDynamic(this, &AAventuraUSFX022026L4Projectile::OnHit);		// set up a notification for when this component hits something
 	RootComponent = mallaPlataforma;
 
-	ZMax = 800.0f;
-	ZMin = 200.0f;
-	Velocidad = 100.0f;
-	Signo = 1.0f;
-
-	//movimientoEjes = FVector(FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f));
 	movimientoEjes = FVector(1.0f, 0.0f, 0.0f);
 	movimientoLimitesMaximos = FVector(FMath::RandRange(200.0f, 800.0f), FMath::RandRange(200.0f, 800.0f), FMath::RandRange(200.0f, 800.0f));
 	movimientoLimitesMinimos = FVector(FMath::RandRange(-800.0f, -200.0f), FMath::RandRange(-800.0f, -200.0f), FMath::RandRange(-800.0f, -200.0f));
 	movimientoVelocidades = FVector(FMath::RandRange(50.0f, 200.0f), FMath::RandRange(50.0f, 200.0f), FMath::RandRange(50.0f, 200.0f));
-	//movimientoDireccion = FVector(FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f), FMath::RandRange(-1.0f, 1.0f));
 	movimientoDireccion = FVector(1.0f, 0.0f, 0.0f);
-
-
-
 }
 
 // Called when the game starts or when spawned
 void APlataforma::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\AventuraUSFX022026L4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{91CDF1F8-195B-4510-9ED2-CFB7310E3618}</UniqueIdentifier>
+      <UniqueIdentifier>{DBD26927-26C0-4944-81FA-2B62736CCD84}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AventuraUSFX022026L4.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\AventuraUSFX022026L4Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{0DD891C6-49AD-46A5-93A8-0BAECB14EAD8}</UniqueIdentifier>
+      <UniqueIdentifier>{5DC6AC4B-83AD-439E-98C7-B0C26870FC03}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\AventuraUSFX022026L4">
-      <UniqueIdentifier>{9E36AD8A-F7B8-4717-B873-36B81008D4EF}</UniqueIdentifier>
+      <UniqueIdentifier>{E00C021C-7AEC-4B76-9E0E-9E1217AEC2A7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4.Build.cs">
       <Filter>Source\AventuraUSFX022026L4</Filter>
@@ -63,6 +65,30 @@
       <Filter>Source\AventuraUSFX022026L4</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\AventuraUSFX022026L4\Plataforma.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\PlataformaAcuatica.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\PlataformaAcuatica.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\PlataformaAerea.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\PlataformaAerea.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\PlataformaSubterranea.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\PlataformaSubterranea.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\PlataformaTerrestre.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\PlataformaTerrestre.h">
       <Filter>Source\AventuraUSFX022026L4</Filter>
     </ClInclude>
   </ItemGroup>
