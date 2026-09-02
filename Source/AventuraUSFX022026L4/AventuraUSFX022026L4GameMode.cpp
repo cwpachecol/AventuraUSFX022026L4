@@ -25,14 +25,16 @@ void AAventuraUSFX022026L4GameMode::BeginPlay()
 	UWorld* World = GetWorld();
 
 	SpawnLocation = FVector(-500.0f, 100.0f, 150.0f);
+	APlataforma* plataformaActual;
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 10; j++) {
 			SpawnLocation.X = SpawnLocation.X + i * 100.0f;
-			SpawnLocation.Y = SpawnLocation.Y + j * 50.0f;
+			SpawnLocation.Y = SpawnLocation.Y + j
+				* 50.0f;
 			if (World != nullptr)
 			{
-				APlataforma* plataformaActual = World->SpawnActor<APlataformaAerea>(SpawnLocation, Rotacion);
+				plataformaActual = World->SpawnActor<APlataformaAerea>(SpawnLocation, Rotacion);
 				aPlataformas.Add(plataformaActual);
 			}
 		}
@@ -43,9 +45,56 @@ void AAventuraUSFX022026L4GameMode::BeginPlay()
 		SpawnLocation.Y = SpawnLocation.Y + i * 50.0f;
 		if (World != nullptr)
 		{
-			APlataforma* plataformaActual = World->SpawnActor<APlataformaTerrestre>(SpawnLocation, Rotacion);
+			plataformaActual = World->SpawnActor<APlataformaTerrestre>(SpawnLocation, Rotacion);
 			aPlataformas.Add(plataformaActual);
 		}
+	}
+
+	SpawnLocation = FVector(-1200.0f, -600.0f, 150.0f);
+
+	for (int i = 0; i < 7; i++) {
+		int TipoEnemigo = FMath::RandRange(0.0f, 4.0f);
+
+		switch (TipoEnemigo)
+		{
+			case 0:
+				SpawnLocation.Y = SpawnLocation.Y + i * 50.0f;
+				if (World != nullptr)
+				{
+					plataformaActual = World->SpawnActor<APlataformaTerrestre>(SpawnLocation, Rotacion);
+					aPlataformas.Add(plataformaActual);
+				}
+			
+				break;
+			case 1:
+				SpawnLocation.Y = SpawnLocation.Y + i * 50.0f;
+				if (World != nullptr)
+				{
+					plataformaActual = World->SpawnActor<APlataformaAerea>(SpawnLocation, Rotacion);
+					aPlataformas.Add(plataformaActual);
+				}
+			break;
+			case 2:
+				SpawnLocation.Y = SpawnLocation.Y + i * 50.0f;
+				if (World != nullptr)
+				{
+					plataformaActual = World->SpawnActor<APlataformaSubterranea>(SpawnLocation, Rotacion);
+					aPlataformas.Add(plataformaActual);
+				}
+			break;
+			case 3:
+				SpawnLocation.Y = SpawnLocation.Y + i * 50.0f;
+				if (World != nullptr)
+				{
+					plataformaActual = World->SpawnActor<APlataformaAcuatica>(SpawnLocation, Rotacion);
+					aPlataformas.Add(plataformaActual);
+				}
+			break;
+
+			default:
+			break;
+		}
+
 	}
 
 
