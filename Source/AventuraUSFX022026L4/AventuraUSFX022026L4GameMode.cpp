@@ -99,6 +99,7 @@ void AAventuraUSFX022026L4GameMode::BeginPlay()
 
 
 	GetWorldTimerManager().SetTimer(TimerEliminarPlataforma, this, &AAventuraUSFX022026L4GameMode::EliminarPlataforma, 0.3 , true);
+	GetWorldTimerManager().SetTimer(TimerEliminarPlataforma, this, &AAventuraUSFX022026L4GameMode::ReposicionarPlataformas, 5, false);
 
 	/*
 	for (int i = 0; i < 2; i++) {
@@ -137,5 +138,27 @@ void AAventuraUSFX022026L4GameMode::EliminarPlataforma()
 		}
 	}
 
+}
+
+void AAventuraUSFX022026L4GameMode::ReposicionarPlataformas()
+{
+	
+	FVector posicionAereos = FVector(0.0f, 0.0f, 200.0f);
+	FVector posicionTerrestres = FVector(-200.0f, -200.0f, 200.0f);
+
+	for (APlataforma* plataformaActual : aPlataformas)
+	{
+		if (plataformaActual->TipoPlataforma == ETipoPlataforma::PLATAFORMA_AEREA)
+		{
+			plataformaActual->SetActorLocation(posicionAereos);
+		}
+		
+		if(plataformaActual->TipoPlataforma == ETipoPlataforma::PLATAFORMA_TERRESTRE)
+		{
+			plataformaActual->SetActorLocation(posicionTerrestres);
+		}
+		
+	}
+	
 }
 

@@ -7,6 +7,8 @@ APlataformaTerrestre::APlataformaTerrestre()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	TipoPlataforma = ETipoPlataforma::PLATAFORMA_TERRESTRE;
+
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlataformaMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere'"));
 	mallaPlataforma->SetStaticMesh(PlataformaMeshAsset.Object);
 

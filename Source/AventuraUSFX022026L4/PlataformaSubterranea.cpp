@@ -7,6 +7,8 @@ APlataformaSubterranea::APlataformaSubterranea()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	TipoPlataforma = ETipoPlataforma::PLATAFORMA_SUBTERRANEA;
+
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlataformaMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cone.Shape_Cone'"));
 	mallaPlataforma->SetStaticMesh(PlataformaMeshAsset.Object);
 

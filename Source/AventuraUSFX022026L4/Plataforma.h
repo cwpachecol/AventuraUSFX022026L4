@@ -8,11 +8,33 @@
 
 class UStaticMeshComponent;
 
+/*
+UENUM(BlueprintType)
+enum class ETipoPlataforma : uint8
+{
+	PLATAFORMA_TERRESTRE UMETA(DisplayName = "TERRESTRE"),
+	PLATAFORMA_AEREA UMETA(DisplayName = "AEREA"),
+	PLATAFORMA_SUBTERRANEA UMETA(DisplayName = "SUBTERRANEA"),
+	PLATAFORMA_ACUATICA UMETA(DisplayName = "ACUATICA")
+};
+*/
+
+enum class ETipoPlataforma
+{
+	PLATAFORMA_AEREA,
+	PLATAFORMA_TERRESTRE,
+	PLATAFORMA_SUBTERRANEA,
+	PLATAFORMA_ACUATICA
+};
+
 UCLASS()
 class AVENTURAUSFX022026L4_API APlataforma : public AActor
 {
 	GENERATED_BODY()
 	
+public:
+	ETipoPlataforma TipoPlataforma;
+
 public:	
 	// Sets default values for this actor's properties
 	APlataforma();

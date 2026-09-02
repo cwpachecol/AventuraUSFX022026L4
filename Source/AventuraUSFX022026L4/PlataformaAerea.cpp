@@ -7,6 +7,8 @@ APlataformaAerea::APlataformaAerea()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	TipoPlataforma = ETipoPlataforma::PLATAFORMA_AEREA;
+
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlataformaMeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Torus.Shape_Torus'"));
 	mallaPlataforma->SetStaticMesh(PlataformaMeshAsset.Object);
 

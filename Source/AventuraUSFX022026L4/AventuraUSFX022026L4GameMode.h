@@ -27,5 +27,8 @@ public:
 public:
 	TArray<APlataforma*> aPlataformas;
 	FTimerHandle TimerEliminarPlataforma;
+	FTimerHandle TimerReposicionarPlataformas;
+
 	void EliminarPlataforma();
+	void ReposicionarPlataformas();
 };
