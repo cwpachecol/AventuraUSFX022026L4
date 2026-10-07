@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\AventuraUSFX022026L4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DBD26927-26C0-4944-81FA-2B62736CCD84}</UniqueIdentifier>
+      <UniqueIdentifier>{38A74AE4-77F5-457B-A4F5-C3860CD4FF51}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AventuraUSFX022026L4.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{5DC6AC4B-83AD-439E-98C7-B0C26870FC03}</UniqueIdentifier>
+      <UniqueIdentifier>{C1C9B260-E856-4FB6-8201-8637BC6934B9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\AventuraUSFX022026L4">
-      <UniqueIdentifier>{E00C021C-7AEC-4B76-9E0E-9E1217AEC2A7}</UniqueIdentifier>
+      <UniqueIdentifier>{8FC186D2-7BB3-433B-9A68-FB6AB952F35D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4.Build.cs">
       <Filter>Source\AventuraUSFX022026L4</Filter>
@@ -59,6 +59,18 @@
       <Filter>Source\AventuraUSFX022026L4</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\AventuraUSFX022026L4\AventuraUSFX022026L4Projectile.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\Enemigo.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\Enemigo.h">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AventuraUSFX022026L4\FabricaPlataformas.cpp">
+      <Filter>Source\AventuraUSFX022026L4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AventuraUSFX022026L4\FabricaPlataformas.h">
       <Filter>Source\AventuraUSFX022026L4</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\AventuraUSFX022026L4\Plataforma.cpp">
